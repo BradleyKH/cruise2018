@@ -8,6 +8,10 @@
 
 <style type="text/css">
 
+BODY {
+  margin: 0px;
+}
+
 MAIN {
   margin: auto;
   padding: 10px 10% 10px 10%;
@@ -15,6 +19,13 @@ MAIN {
 
 H2 {
   text-align: center;
+}
+
+H3 {
+  position: sticky;
+  position: -webkit-sticky; /* Safari */
+  top: 0;
+  background-color: white;
 }
 
 IMG {
@@ -30,6 +41,35 @@ IMG {
 .carousel-inner {
   background-color: black;
 }
+
+/* Small Screens */
+@media only screen and (max-width: 600px) {
+
+  .smallonly {
+    display: inline;
+  }
+
+  .largeonly {
+    display: none;
+  }
+
+  .carousel-caption {
+    display: none;
+  }
+}
+
+/* Large Screens */
+@media only screen and (min-width: 601px) {
+
+  .smallonly {
+    display: none;
+  }
+
+  .largeonly {
+    display: inline;
+  }
+}
+
 </style>
 
 
@@ -55,7 +95,7 @@ IMG {
       <div class="item active">
         <img src="pg1.JPG">
 	<div class="carousel-caption">
-          <h3>Punta Gorda</h3>
+          <h4>Punta Gorda</h4>
           <p>On the front porch</p>
         </div>
       </div>
@@ -63,7 +103,7 @@ IMG {
       <div class="item">
         <img src="pg2.JPG">
 	<div class="carousel-caption">
-          <h3>Punta Gorda</h3>
+          <h4>Punta Gorda</h4>
           <p>View from Harpoon Harry's</p>
         </div>
       </div>
@@ -99,7 +139,7 @@ IMG {
       <div class="item active">
         <img src="boat1.JPG">
 	<div class="carousel-caption">
-          <h3>The Carnival Miracle</h3>
+          <h4>The Carnival Miracle</h4>
           <p>Our ship</p>
         </div>
       </div>
@@ -107,7 +147,7 @@ IMG {
       <div class="item">
         <img src="boat2.JPG">
 	<div class="carousel-caption">
-          <h3>Bacchus Dining Room</h3>
+          <h4>Bacchus Dining Room</h4>
           <p>Many grapes</p>
         </div>
       </div>
@@ -115,7 +155,7 @@ IMG {
       <div class="item">
         <img src="boat3.JPG">
 	<div class="carousel-caption">
-          <h3>Bacchus Dining Room</h3>
+          <h4>Bacchus Dining Room</h4>
           <p>More grapes</p>
         </div>
       </div>
@@ -123,7 +163,7 @@ IMG {
       <div class="item">
         <img src="boat4.JPG">
 	<div class="carousel-caption">
-          <h3>Happy Laura</h3>
+          <h4>Happy Laura</h4>
           <p>And stylish, too.</p>
         </div>
       </div>
@@ -131,7 +171,7 @@ IMG {
       <div class="item">
         <img src="boat5.JPG">
 	<div class="carousel-caption">
-          <h3>Happy Couple</h3>
+          <h4>Happy Couple</h4>
           <p>Dressed up for dinner</p>
         </div>
       </div>
@@ -224,30 +264,21 @@ IMG {
     <div class="carousel-inner">
       <div class="item active">
         <img src="coz0.JPG">
-	<div class="carousel-caption">
-          <h3>Cozumel</h3>
-        </div>
       </div>
 
       <div class="item">
         <img src="coz1.JPG">
-	<div class="carousel-caption">
-          <h3>Cozumel</h3>
-        </div>
       </div>
 
       <div class="item">
         <img src="coz2.JPG">
 	<div class="carousel-caption">
-          <h3>Alejandro</h3>
+          <h4>Alejandro</h4>
         </div>
       </div>
 
       <div class="item">
         <img src="coz3.JPG">
-	<div class="carousel-caption">
-          <h3>Cozumel</h3>
-        </div>
       </div>
     </div>
 
@@ -287,66 +318,34 @@ IMG {
     <div class="carousel-inner">
       <div class="item active">
         <img src="jungle1.JPG">
-		<div class="carousel-caption">
-          <h3>Caption goes here</h3>
-          <p>Description goes here</p>
-        </div>
       </div>
 
       <div class="item">
         <img src="jungle2.JPG">
-		<div class="carousel-caption">
-          <h3>Caption goes here</h3>
-          <p>Description goes here</p>
-        </div>
       </div>
 
       <div class="item">
         <img src="jungle3.JPG">
-		<div class="carousel-caption">
-          <h3>Caption goes here</h3>
-          <p>Description goes here</p>
-        </div>
       </div>
 
       <div class="item">
         <img src="jungle4.JPG">
-		<div class="carousel-caption">
-          <h3>Caption goes here</h3>
-          <p>Description goes here</p>
-        </div>
       </div>
 
       <div class="item">
         <img src="jungle5.JPG">
-		<div class="carousel-caption">
-          <h3>Caption goes here</h3>
-          <p>Description goes here</p>
-        </div>
       </div>
 
       <div class="item">
         <img src="jungle6.JPG">
-		<div class="carousel-caption">
-          <h3>Caption goes here</h3>
-          <p>Description goes here</p>
-        </div>
       </div>
 
       <div class="item">
         <img src="jungle7.JPG">
-		<div class="carousel-caption">
-          <h3>Caption goes here</h3>
-          <p>Description goes here</p>
-        </div>
       </div>
 
       <div class="item">
         <img src="jungle8.JPG">
-		<div class="carousel-caption">
-          <h3>Caption goes here</h3>
-          <p>Description goes here</p>
-        </div>
       </div>
     </div>
 
@@ -388,104 +387,87 @@ IMG {
       <div class="item active">
         <img src="mayan1.JPG">
 		<div class="carousel-caption">
-          <h3>Caption goes here</h3>
-          <p>Description goes here</p>
+          <h4>Jaguar Temple</h4>          
         </div>
       </div>
 
       <div class="item">
         <img src="mayan2.JPG">
 		<div class="carousel-caption">
-          <h3>Caption goes here</h3>
-          <p>Description goes here</p>
+          <h4>Mask Temple</h4>
         </div>
       </div>
 
       <div class="item">
         <img src="mayan3.JPG">
 		<div class="carousel-caption">
-          <h3>Caption goes here</h3>
-          <p>Description goes here</p>
+          <h4>Jaguar Temple</h4>
         </div>
       </div>
 
       <div class="item">
         <img src="mayan4.JPG">
 		<div class="carousel-caption">
-          <h3>Caption goes here</h3>
-          <p>Description goes here</p>
+          <h4>Jaguar Temple</h4>
         </div>
       </div>
 
       <div class="item">
         <img src="mayan5.JPG">
-		<div class="carousel-caption">
-          <h3>Caption goes here</h3>
-          <p>Description goes here</p>
-        </div>
       </div>
 
       <div class="item">
         <img src="mayan6.JPG">
 		<div class="carousel-caption">
-          <h3>Caption goes here</h3>
-          <p>Description goes here</p>
+          <h4>Mask Temple</h4>
         </div>
       </div>
 
       <div class="item">
         <img src="mayan7.JPG">
 		<div class="carousel-caption">
-          <h3>Caption goes here</h3>
-          <p>Description goes here</p>
+          <h4>High Temple</h4>
+          <p>Hi, High Bradley!</p>
         </div>
       </div>
 
       <div class="item">
         <img src="mayan8.JPG">
-		<div class="carousel-caption">
-          <h3>Caption goes here</h3>
-          <p>Description goes here</p>
-        </div>
       </div>
 
       <div class="item">
         <img src="mayan9.JPG">
 		<div class="carousel-caption">
-          <h3>Caption goes here</h3>
-          <p>Description goes here</p>
+          <h4>High Temple</h4>
         </div>
       </div>
 
       <div class="item">
         <img src="mayan10.JPG">
 		<div class="carousel-caption">
-          <h3>Caption goes here</h3>
-          <p>Description goes here</p>
+          <h4>High Temple</h4>
+          <p>It goes high.</p>
         </div>
       </div>
 
       <div class="item">
         <img src="mayan11.JPG">
 		<div class="carousel-caption">
-          <h3>Caption goes here</h3>
-          <p>Description goes here</p>
+          <h4>Bradley atop the High Temple</h4>
         </div>
       </div>
 
       <div class="item">
         <img src="mayan12.JPG">
 		<div class="carousel-caption">
-          <h3>Caption goes here</h3>
-          <p>Description goes here</p>
+          <h4>High Temple</h4>
         </div>
       </div>
 
       <div class="item">
         <img src="mayan13.JPG">
 		<div class="carousel-caption">
-          <h3>Caption goes here</h3>
-          <p>Description goes here</p>
+          <h4>High Temple</h4>
         </div>
       </div>
     </div>
@@ -532,98 +514,56 @@ IMG {
     <div class="carousel-inner">
       <div class="item active">
         <img src="gumba0.JPG">
-		<div class="carousel-caption">
-          <h3>Caption goes here</h3>
-          <p>Description goes here</p>
-        </div>
       </div>
 
       <div class="item">
         <img src="gumba1.JPG">
-		<div class="carousel-caption">
-          <h3>Caption goes here</h3>
-          <p>Description goes here</p>
-        </div>
       </div>
 
       <div class="item">
         <img src="gumba2.JPG">
 		<div class="carousel-caption">
-          <h3>Caption goes here</h3>
-          <p>Description goes here</p>
+          <h4>Iguana nest</h4>
         </div>
       </div>
 
       <div class="item">
         <img src="gumba4.JPG">
 		<div class="carousel-caption">
-          <h3>Caption goes here</h3>
-          <p>Description goes here</p>
+          <h4>Roatan spiny-tailed black iguanas</h4>
         </div>
       </div>
 
       <div class="item">
         <img src="gumba6.JPG">
-		<div class="carousel-caption">
-          <h3>Caption goes here</h3>
-          <p>Description goes here</p>
-        </div>
       </div>
 
       <div class="item">
         <img src="gumbaplant1.JPG">
-		<div class="carousel-caption">
-          <h3>Caption goes here</h3>
-          <p>Description goes here</p>
-        </div>
       </div>
 
       <div class="item">
         <img src="gumbaplant2.JPG">
-		<div class="carousel-caption">
-          <h3>Caption goes here</h3>
-          <p>Description goes here</p>
-        </div>
       </div>
 
       <div class="item">
         <img src="gumbaplant3.JPG">
-		<div class="carousel-caption">
-          <h3>Caption goes here</h3>
-          <p>Description goes here</p>
-        </div>
       </div>
 
       <div class="item">
         <img src="gumbaplant4.JPG">
-		<div class="carousel-caption">
-          <h3>Caption goes here</h3>
-          <p>Description goes here</p>
-        </div>
       </div>
 
       <div class="item">
         <img src="gumbaplant5.JPG">
-		<div class="carousel-caption">
-          <h3>Caption goes here</h3>
-          <p>Description goes here</p>
-        </div>
       </div>
 
       <div class="item">
         <img src="gumbaplant6.JPG">
-		<div class="carousel-caption">
-          <h3>Caption goes here</h3>
-          <p>Description goes here</p>
-        </div>
       </div>
 
       <div class="item">
         <img src="gumbaplant7.JPG">
-		<div class="carousel-caption">
-          <h3>Caption goes here</h3>
-          <p>Description goes here</p>
-        </div>
       </div>
     </div>
 
@@ -663,88 +603,66 @@ IMG {
      <div class="item active">
         <img src="gumba3.JPG">
 		<div class="carousel-caption">
-          <h3>Caption goes here</h3>
-          <p>Description goes here</p>
+          <h4>Wobbly Bridge</h4>
         </div>
       </div>
 	  
 	  <div class="item">
         <img src="gumba5.JPG">
-		<div class="carousel-caption">
-          <h3>Caption goes here</h3>
-          <p>Description goes here</p>
-        </div>
       </div>
 	  
 	  <div class="item">
         <img src="bird0.JPG">
 		<div class="carousel-caption">
-          <h3>Caption goes here</h3>
-          <p>Description goes here</p>
+          <p>Macaw!</p>
         </div>
       </div>
 	  
 	  <div class="item">
         <img src="bird1.JPG">
-		<div class="carousel-caption">
-          <h3>Caption goes here</h3>
-          <p>Description goes here</p>
-        </div>
       </div>
 	  
 	  <div class="item">
         <img src="bird2.JPG">
 		<div class="carousel-caption">
-          <h3>Caption goes here</h3>
-          <p>Description goes here</p>
+          <h4>Bradley</h4>
+          <p>Friend of the birds</p>
         </div>
       </div>
 	  
 	  <div class="item">
         <img src="bird3.JPG">
-		<div class="carousel-caption">
-          <h3>Caption goes here</h3>
-          <p>Description goes here</p>
-        </div>
       </div>
 	  
 	  <div class="item">
         <img src="bird4.JPG">
-		<div class="carousel-caption">
-          <h3>Caption goes here</h3>
-          <p>Description goes here</p>
-        </div>
       </div>
 	  
 	  <div class="item">
         <img src="bird5.JPG">
 		<div class="carousel-caption">
-          <h3>Caption goes here</h3>
-          <p>Description goes here</p>
+          <h4>Laura the Perch</h4>
         </div>
       </div>
 	  
 	  <div class="item">
         <img src="bird6.JPG">
 		<div class="carousel-caption">
-          <h3>Caption goes here</h3>
-          <p>Description goes here</p>
+          <h4>Toucan!</h4>
         </div>
       </div>
 	  
 	  <div class="item">
         <img src="bird7.JPG">
 		<div class="carousel-caption">
-          <h3>Caption goes here</h3>
-          <p>Description goes here</p>
+          <p>Peacock!</p>
         </div>
       </div>
 	  
 	  <div class="item">
         <img src="bird8.JPG">
 		<div class="carousel-caption">
-          <h3>Caption goes here</h3>
-          <p>Description goes here</p>
+          <p>Peacock!</p>
         </div>
       </div>
     </div>
@@ -785,88 +703,57 @@ IMG {
       <div class="item active">
         <img src="monkey1.JPG">
 		<div class="carousel-caption">
-          <h3>Caption goes here</h3>
-          <p>Description goes here</p>
+          <h4>Monkeys!</h4>
+          <p>White-headed capuchins</p>
         </div>
       </div>
 
       <div class="item">
         <img src="monkey2.JPG">
 		<div class="carousel-caption">
-          <h3>Caption goes here</h3>
-          <p>Description goes here</p>
+          <h4>They are so soft</h4>
         </div>
       </div>
 
       <div class="item">
         <img src="monkey3.JPG">
-		<div class="carousel-caption">
-          <h3>Caption goes here</h3>
-          <p>Description goes here</p>
-        </div>
       </div>
 
       <div class="item">
         <img src="monkey4.JPG">
-		<div class="carousel-caption">
-          <h3>Caption goes here</h3>
-          <p>Description goes here</p>
-        </div>
       </div>
 
       <div class="item">
         <img src="monkey5.JPG">
-		<div class="carousel-caption">
-          <h3>Caption goes here</h3>
-          <p>Description goes here</p>
-        </div>
       </div>
 
       <div class="item">
         <img src="monkey6.JPG">
-		<div class="carousel-caption">
-          <h3>Caption goes here</h3>
-          <p>Description goes here</p>
-        </div>
       </div>
-
+	  
+      <div class="item">
+        <img src="monkey8.JPG">
+      </div>
+	  
       <div class="item">
         <img src="monkey7.JPG">
 		<div class="carousel-caption">
-          <h3>Caption goes here</h3>
-          <p>Description goes here</p>
-        </div>
-      </div>
-
-      <div class="item">
-        <img src="monkey8.JPG">
-		<div class="carousel-caption">
-          <h3>Caption goes here</h3>
-          <p>Description goes here</p>
+          <h4>Monkey selfie!</h4>
         </div>
       </div>
 
       <div class="item">
         <img src="monkey9.JPG">
-		<div class="carousel-caption">
-          <h3>Caption goes here</h3>
-          <p>Description goes here</p>
-        </div>
       </div>
 
       <div class="item">
         <img src="monkey10.JPG">
-		<div class="carousel-caption">
-          <h3>Caption goes here</h3>
-          <p>Description goes here</p>
-        </div>
       </div>
 
       <div class="item">
         <img src="monkey11.JPG">
 		<div class="carousel-caption">
-          <h3>Caption goes here</h3>
-          <p>Description goes here</p>
+          <h4>Jumping away</h4>
         </div>
       </div>
     </div>
@@ -902,49 +789,31 @@ IMG {
       <div class="item active">
         <img src="beach0.JPG">
 		<div class="carousel-caption">
-          <h3>Caption goes here</h3>
-          <p>Description goes here</p>
+          <h4>Roatan beach</h4>
         </div>
       </div>
 
       <div class="item">
         <img src="beach1.JPG">
 		<div class="carousel-caption">
-          <h3>Caption goes here</h3>
-          <p>Description goes here</p>
+          <h4>Chillin'</h4>
         </div>
       </div>
 
       <div class="item">
         <img src="beach2.JPG">
-		<div class="carousel-caption">
-          <h3>Caption goes here</h3>
-          <p>Description goes here</p>
-        </div>
       </div>
 
       <div class="item">
         <img src="beach3.JPG">
-		<div class="carousel-caption">
-          <h3>Caption goes here</h3>
-          <p>Description goes here</p>
-        </div>
       </div>
 
       <div class="item">
         <img src="beach4.JPG">
-		<div class="carousel-caption">
-          <h3>Caption goes here</h3>
-          <p>Description goes here</p>
-        </div>
       </div>
 
       <div class="item">
         <img src="beach5.JPG">
-		<div class="carousel-caption">
-          <h3>Caption goes here</h3>
-          <p>Description goes here</p>
-        </div>
       </div>
     </div>
 
@@ -981,7 +850,7 @@ IMG {
       <div class="item active">
         <img src="rays0.JPG">
 		<div class="carousel-caption">
-          <h3>Bradley swimming with a stingray</h3>
+          <h4>Bradley swimming with a stingray</h4>
         </div>
       </div>
 
@@ -1036,24 +905,22 @@ IMG {
       <div class="item active">
         <img src="caymanlunch1.JPG">
 		<div class="carousel-caption">
-          <h3>Caption goes here</h3>
-          <p>Description goes here</p>
+          <h4>Local Lunch</h4>
         </div>
       </div>
 
       <div class="item">
         <img src="caymanlunch2.JPG">
 		<div class="carousel-caption">
-          <h3>Caption goes here</h3>
-          <p>Description goes here</p>
+          <h4>Tarpons</h4>
         </div>
       </div>
 
       <div class="item">
         <img src="caymanlunch3.JPG">
 		<div class="carousel-caption">
-          <h3>Caption goes here</h3>
-          <p>Description goes here</p>
+		  <h4>Our Boat</h4>
+          <p>And a fake pirate ship</p>
         </div>
       </div>
     </div>
@@ -1107,7 +974,7 @@ IMG {
       <div class="item">
         <img src="view5.JPG">
 		<div class="carousel-caption">
-          <h3>Big Ocean</h3>
+          <h4>Big Ocean</h4>
           <p>Little Lonely Island</p>
         </div>
       </div>
